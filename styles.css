@@ -1,43 +1,49 @@
 body {
+    box-sizing: border-box;
+  }
+  
+  h1 {
     text-align: center;
-}
-
-img {
-    padding: 10px;
-}
-
-form input, form label {
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form input, form label {
     margin: 10px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
-
-/*.image {
-    margin: 15px 15px;
-    width: 150px;
-    height: 150px;
-    padding: 40px;
+   
+  .allusers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  .user {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-*/
-  .image p a {
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
+    background-color: #CCC;
+    margin: 12px;
+    width: 160px;
+    height: 160px;
+    padding: 40px;
+    border: 1px solid brown;
   }
-  .image p a:hover {
-    color: #CCC;
-}
-
-.user {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-}
+   
+  .user img, .user a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .user:hover {
+    opacity: 0.5;
+  }
